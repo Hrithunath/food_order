@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:food/models/today_likes.dart';
-import 'package:food/views/screens/notification.dart';
-import 'package:food/widget/custom_text.dart';
-import 'package:food/widget/like_to_widget_items.dart';
-import 'package:food/widget/search_product.dart';
-import 'package:food/widget/trending.dart';
+import 'package:food/features/data/domain/model/today_likes.dart';
+import 'package:food/features/data/presentation/pages/notification.dart';
+import 'package:food/features/data/presentation/widget/custom_text.dart';
+import 'package:food/features/data/presentation/widget/like_to_widget_items.dart';
+import 'package:food/features/data/presentation/widget/search_product.dart';
+import 'package:food/features/data/presentation/widget/trending.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

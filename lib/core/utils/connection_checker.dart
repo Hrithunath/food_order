@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:food/services/api_service.dart';
+import 'package:food/features/data/data/repository/services/api_service.dart';
 import 'package:provider/provider.dart';
 
 class ConnectionChecker {

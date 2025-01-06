@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food/models/today_likes.dart';
+import 'package:food/features/data/domain/model/today_likes.dart';
 
 class LikeToDoWidgetItem extends StatelessWidget {
   const LikeToDoWidgetItem({super.key, required this.index});

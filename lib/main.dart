@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:food/routes/routes.dart';
-import 'package:food/views/screens/bottom_navigation.dart';
-import 'package:food/views/screens/home.dart';
-import 'package:food/services/api_service.dart';
+import 'package:food/config/routes/routes.dart';
+import 'package:food/features/data/presentation/pages/bottom_navigation.dart';
+import 'package:food/features/data/presentation/pages/home.dart';
+import 'package:food/features/data/data/repository/services/api_service.dart';
 import 'package:provider/provider.dart';
 
 void main() {

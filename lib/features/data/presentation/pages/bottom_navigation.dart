@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food/utils/connection_checker.dart';
-import 'package:food/views/screens/account.dart';
-import 'package:food/views/screens/cart.dart';
-import 'package:food/views/screens/home.dart';
-import 'package:food/views/screens/order.dart';
+import 'package:food/core/utils/connection_checker.dart';
+import 'package:food/features/data/presentation/pages/account.dart';
+import 'package:food/features/data/presentation/pages/cart.dart';
+import 'package:food/features/data/presentation/pages/home.dart';
+import 'package:food/features/data/presentation/pages/order.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,17 +15,19 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  @override
-  void initState() {
-    ConnectionChecker.listenForConnectionChanges(context);
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   // Listen for connection changes
+  //   ConnectionChecker.listenForConnectionChanges(context);
+  // }
 
-  @override
-  void dispose() {
-    ConnectionChecker.cancelConnectionSubscription();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   // Cancel connection subscription when disposed
+  //   ConnectionChecker.cancelConnectionSubscription();
+  //   super.dispose();
+  // }
 
   final List<Widget> _pages = [
     const Home(),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food/widget/custom_text.dart';
+import 'package:food/features/data/presentation/widget/custom_text.dart';
 
 class trending extends StatelessWidget {
   const trending({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food/views/screens/home.dart';
-import 'package:food/views/screens/notification.dart';
+import 'package:food/features/data/presentation/pages/home.dart';
+import 'package:food/features/data/presentation/pages/notification.dart';
 
 class Routes {
   static final Map<String, WidgetBuilder> routes = {

@@ -1,10 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:food/services/api_service.dart';
-import 'package:food/widget/custom_text.dart';
+import 'package:food/features/data/data/repository/services/api_service.dart';
+import 'package:food/core/utils/connection_checker.dart';
+import 'package:food/features/data/presentation/widget/custom_text.dart';
 import 'package:provider/provider.dart';
 
-class Notifications extends StatelessWidget {
+class Notifications extends StatefulWidget {
   const Notifications({super.key});
+
+  @override
+  _NotificationsState createState() => _NotificationsState();
+}
+
+class _NotificationsState extends State<Notifications> {
+  @override
+  void initState() {
+    super.initState();
+
+    ConnectionChecker.checkConnection(context);
+    ConnectionChecker.listenForConnectionChanges(context);
+  }
+
+  @override
+  void dispose() {
+    ConnectionChecker.cancelConnectionSubscription();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
-import 'package:food/models/notification.dart';
+import 'package:food/features/data/domain/model/notification.dart';
 
 import 'package:http/http.dart' as http;
 
