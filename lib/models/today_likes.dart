@@ -8,17 +8,17 @@ class TodayLikes {
 
 final likeTodoList = [
   TodayLikes(
-      title: "Food Delivery",
+      title: "Food\n Delivery",
       icon: "asset/images/category/image.png",
       offer: "10% off"),
   TodayLikes(
       title: "Medicines",
       icon: "asset/images/category/image copy.png",
-      offer: "5% off"),
+      offer: "10% off"),
   TodayLikes(
-      title: "Pet Supplies",
+      title: "Pet \nSupplies",
       icon: "asset/images/category/image copy 7.png",
-      offer: ""),
+      offer: "10% off"),
   TodayLikes(
       title: "Gifts",
       icon: "asset/images/category/image copy 2.png",

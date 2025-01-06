@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:food/bottom_navigation.dart';
-import 'package:food/home.dart';
-import 'package:food/service.dart';
+import 'package:food/routes/routes.dart';
+import 'package:food/views/screens/bottom_navigation.dart';
+import 'package:food/views/screens/home.dart';
+import 'package:food/services/api_service.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       providers: [ChangeNotifierProvider(create: (_) => DataManage())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        initialRoute: '/',
+        routes: Routes.routes,
+        home: const Home(),
       ),
     );
   }

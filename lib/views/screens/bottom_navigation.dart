@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:food/account.dart';
-import 'package:food/cart.dart';
-import 'package:food/home.dart';
-import 'package:food/order.dart';
+import 'package:food/utils/connection_checker.dart';
+import 'package:food/views/screens/account.dart';
+import 'package:food/views/screens/cart.dart';
+import 'package:food/views/screens/home.dart';
+import 'package:food/views/screens/order.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -13,6 +14,18 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
+
+  @override
+  void initState() {
+    ConnectionChecker.listenForConnectionChanges(context);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    ConnectionChecker.cancelConnectionSubscription();
+    super.dispose();
+  }
 
   final List<Widget> _pages = [
     const Home(),
